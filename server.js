@@ -15,7 +15,7 @@
  )
  .catch(err=>
   console.error("Error, connecting to Database: Mongoose",err))  
-  app.use(cors({ origin: 'http://localhost:3001' }));
+  app.use(cors({ origin: 'https://notesthat.netlify.app/' }));
   app.use('/auth',authRoutes)
   app.use('/note',noteRoutes)
 const PORT = process.env.PORT || 5000;
